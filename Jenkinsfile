@@ -27,6 +27,9 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout scm
+                echo "Build URL is ${env.BUILD_URL}"
+                echo "Build Number is ${env.BUILD_NUMBER}"
+                echo "testing."
             }
         }
 
